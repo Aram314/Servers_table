@@ -1,0 +1,62 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Orion 1",
+      "ip_address": "1.0.1.0",
+      "anycast": [],
+      "ports": [
+        {
+          "switch": "sw01-cpt swp6",
+          "port_name": "swp6",
+          "location": "sw01-cpt",
+          "bgp": "Connect",
+          "prefix": 0,
+          "time": "Never"
+        },
+        {
+          "switch": "sw01-sao swp1",
+          "port_name": "swp2",
+          "location": "sw01-sa0",
+          "bgp": "Disconnect",
+          "prefix": 1,
+          "time": "Today"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Orion 2",
+      "ip_address": "12.32.43.12",
+      "anycast": ["1.2.3.4", "4.3.2.4"],
+      "ports": [
+        {
+          "switch": "sw02-cpt swp2",
+          "port_name": "swp2",
+          "location": "sw02-cpt",
+          "bgp": "Connect",
+          "prefix": 0,
+          "time": "Today"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Web01",
+      "ip_address": "0.0.0.0",
+      "anycast": ["8.8.8.8"],
+      "ports": [
+        {
+          "switch": "sw01-web swp5",
+          "port_name": "swp5",
+          "location": "sw01-cpt",
+          "bgp": "Disconnect",
+          "prefix": 0,
+          "time": "Never"
+        }
+      ]
+    }
+  ],
+  "status": 1,
+  "statusCode": 200
+}
