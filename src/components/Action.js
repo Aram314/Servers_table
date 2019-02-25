@@ -28,7 +28,6 @@ class Action extends React.Component {
                         <button className="dropdown-item" type="button" data-toggle="modal" data-target={data_target}><i className="far fa-trash-alt"></i> Delete</button>
                     </div>
                 </ActionButton>
-
                 <div className="modal fade" id={modalId} tabIndex="-1" role="dialog" aria-labelledby={modalLabel} aria-hidden="true">
                     <div className="modal-dialog" role="document">
                         <div className="modal-content">
@@ -49,10 +48,8 @@ class Action extends React.Component {
                     </div>
                 </div>
             </div>
-
         )
     }
-
 }
 
 Action.propTypes = {

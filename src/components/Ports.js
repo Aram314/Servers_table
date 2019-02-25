@@ -28,14 +28,12 @@ class Ports extends React.Component {
                 {ports_info.map(port_info => {
                     return (
                         <PortCard className='port card' key={port_info.location}>
-
-                                <p className="card-text">
-                                    <i className="fas fa-network-wired text-success"></i> {port_info.location}({port_info.port_name})@{port_info.switch}
-                                </p>
-                                <div className="port_BGP_state">
-                                    bgp: {port_info.bgp}; prefix: {port_info.prefix}; time: {port_info.time}
-                                </div>
-
+                            <p className="card-text">
+                                <i className="fas fa-network-wired text-success"></i> {port_info.location}({port_info.port_name})@{port_info.switch}
+                            </p>
+                            <div className="port_BGP_state">
+                                bgp: {port_info.bgp}; prefix: {port_info.prefix}; time: {port_info.time}
+                            </div>
                         </PortCard>
                     )
                 })}

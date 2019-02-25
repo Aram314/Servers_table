@@ -38,7 +38,6 @@ class Sort extends React.Component {
                     <i className="fas fa-sort-amount-up" onClick={()=>this.sort(field)}></i> :
                     <i className="fas fa-sort-amount-down" onClick={()=>this.sort(field)}></i>}
             </SortIcon>
-
         )
     }
 }
